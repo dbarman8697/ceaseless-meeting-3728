@@ -83,6 +83,10 @@ function Navbar() {
                         <Link>More</Link>
                         <Link>Cart</Link>
 
+                        {/* .. */}
+
+                        <Link>Wishlist</Link>
+
                     </Stack>
 
                 </Flex>
