@@ -1,101 +1,45 @@
-import React from "react";
-import MONEY from "../Images/GK.png"
-import { HamburgerIcon } from "@chakra-ui/icons";
-import {
-    Flex,
-    Box,
-    useDisclosure,
-    Stack,
-    Link,
-    Image,
-    Input,
-    InputGroup,
-    InputRightElement,
-    Button,
-} from "@chakra-ui/react";
-
-import { SearchIcon } from "@chakra-ui/icons";
+import React from 'react'
+import "./Navbar.css"
+import {NavLink} from'react-router-dom'
+import GIFTKART from "../Images/GK.png"
 
 function Navbar() {
 
-    const { isOpen, onOpen, onClose } = useDisclosure();
+
+
 
     return (
-
-        <>
-            <Flex
-                py={2}
-                px={4}
-                direction={["column", "row"]}
-                justify="space-around"
-                bg="green"
-            >
-
-                <Flex alignItems="center" wraps="wrap">
-                    <Flex flexGrow={1} justify="center">
-                        <Box ml={[4, 0]}>
-                            <Image src={MONEY} alt="GiftKart" width='250px' marginLeft='50px' />
-                        </Box>
-
-                        <Box ml={[4, 0]}>
-                            <InputGroup>
-                                <Input
-                                    placeholder="Search for products, brands and more"
-                                    bg='white'
-                                    w="450px"
-                                    marginLeft='20px'
-                                    size='sm'
-                                    h='38px'
-                                    marginTop = '28px'
-                                />
-
-                                <InputRightElement children={<SearchIcon color="#2874f0"   marginTop = '36px' />} />
-                            </InputGroup>
-                        </Box>
-
-                        <Box ml={[4, 0]}>
-                            <Button bg='white' 
-                                    w="150px"
-                                    marginLeft='20px'
-                                    size='sm'
-                                    h='38px'
-                                    marginTop = '28px' 
-                                    color="#2874f0">
-                                Login
-                            </Button>
-                        </Box>
-                    </Flex>
-
-                    <HamburgerIcon
-                        onClick={isOpen ? onClose : onOpen}
-                        display={["inline", "none"]}
-                    />
-                </Flex>
-
-                <Flex
-                    display={[isOpen ? "flex" : "none", "flex"]}
-                >
-
-                    <Stack align="center" direction={["column", "row"]} spacing="30px"
-                        marginLeft='100px' color="white">
-
-                        <Link>Become a seller</Link>
-                        <Link>More</Link>
-                        <Link>Cart</Link>
-
-                        {/* .. */}
-
-                        <Link>Wishlist</Link>
-
-                    </Stack>
-
-                </Flex>
-
-            </Flex>
+       <>
+       <div className='top-nav' >
+                <p>Your store: Sams Shopping Center</p>
+                <p>Catalog quick Order</p>
+                <p>Order by Phone 1-877-530-TREE</p>
+                <p>Same-Day-Delivery</p>
+                <p>Track Order</p>
+                <img src='https://www.dollartree.com/ccstore/v1/images/?source=/file/general/shop_family_dollar.png&height=30&width=193' alt="shop"/>
+      </div>
+      <div className='nav'>
+           <div><NavLink to="/" > <img src={GIFTKART} alt="logo" width="50%" /></NavLink></div>
+           <div> 
+            <NavLink to="/plusmember" style={{textDecoration:"none",fontSize:"20px",display:"flex",alignItems:"center",justifyContent:"right"}} >
+             <img src="https://www.dollartree.com/file/general/dt_plus_pdp_plp_200x70.png"alt='logo' width="25%"/><p>Shop</p></NavLink>
+           <NavLink to="/login" style={{textDecoration:"none", margin:"10px",fontSize:"20px"}}>Login</NavLink>
+           <NavLink to="/cart" style={{textDecoration:"none", margin:"10px",fontSize:"20px"}}>Cart</NavLink>
+           </div>
+        </div>
+        <div className='nav-bar'>
+            <NavLink to="/product" style={{textDecoration:"none"}} ><h2>All Products </h2></NavLink>
+            <h2>Holidays, Seasons & Celebrations </h2>
+            <h2>Toys & Crafts </h2>
+            <h2>Kitchen & Home Décor </h2>
+            <h2>Home & Office</h2>
+            <h2>Health & Personal Care</h2>
+            <h2>Food, Candy & Drinks</h2>
+        </div>
+        
+       <hr/>
         </>
+    )
+}
 
-    );
-};
-
-
-export default Navbar;
+export default Navbar

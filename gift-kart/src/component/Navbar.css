@@ -1,0 +1,49 @@
+*{
+    margin: 0px;
+    padding: 0px;
+   
+    
+}
+.top-nav{
+    background-color: green;
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    padding: 20px;
+    
+}
+.top-nav>p{
+    margin: 10px;
+    font-weight: 400;
+    font-size: 12px;
+}
+.nav{
+    width: 80%;
+    margin: auto;
+display:flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px;
+
+}
+.nav>div~div{
+    margin-right: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+}
+
+hr{
+  
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.nav-bar{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
