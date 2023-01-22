@@ -1,0 +1,21 @@
+.admin{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    width: 90%;
+    margin: auto;
+    
+}
+.cards{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.image{
+    padding: 10px;
+}
+.productDetails{
+    padding: 15px;
+}

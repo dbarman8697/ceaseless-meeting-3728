@@ -1,0 +1,197 @@
+h1{
+    font-size: 35px;
+    font-weight: 500;
+}
+hr{
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.banner{
+    margin-bottom: 75px;
+    width: 80%;
+    margin:auto
+}
+.middle{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: auto;
+    width: 80%;
+    margin:auto;
+    margin-bottom: 75px;
+}
+.Plus-option{
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    margin:auto;
+    margin-bottom: 75px;
+}
+.party-supplies{
+    display:flex;
+    justify-content: center;    
+    width: 80%;
+    margin:auto;
+    margin-bottom: 75px;
+}
+.party-supplies img{
+    border-radius: 50%;
+    width: 80%;
+}
+
+.offers{
+    background-color: rgb(235, 235, 235);
+    padding: 20px;
+    width: 80%;
+    margin:auto;
+    margin-bottom: 40px;
+}
+.offers h1{
+    color: red;
+    font-size: 50px;
+}
+.offer-card{
+    display: flex;
+    justify-content: space-evenly;
+}
+.offer-card img{
+    width: 35%;
+}
+
+.treasure{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    width: 80%;
+    margin:auto;
+    margin-bottom: 90px;
+}
+.treasure h2{
+     font-size:30px ;
+     font-weight: 600;
+}
+.treasure div{
+    padding: 20px;
+}
+.treasure .sub-div{
+    padding: 0px 40px;
+}
+.sub-div p{
+    font-size: 20px;
+}
+.sub-div button{
+    background-color: black;
+    color: white;
+    border-radius:5px;
+    padding: 15px 25px;
+    font-size: 20px;
+}
+.preview{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 60px;
+    
+}
+.image-part{
+    position: relative;
+
+}
+.image-part h2{
+    position: absolute;
+    top:8px;
+    left: 16px;
+    font-size: 30px;
+}
+.image-part p{
+    position: absolute;
+    top:50px;
+    left: 10px;
+    font-size: 18px;
+}
+.image-part button{
+    position: absolute;
+    bottom: 20px;
+    right: 40%;
+    background-color: black;
+    color: white;
+    border-radius:5px;
+    padding: 15px 25px;
+    font-size: 20px;
+}
+.product-preview{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+}
+.product-preview div{
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+.product-preview img{
+width: 90%;
+}
+.product-preview h4{
+    font-weight: 400;
+}
+
+.sweet-saving{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 60px;
+}
+.sweet-saving img{
+    width: 48%;
+}
+
+.Blog{
+width: 80%;
+margin: auto;
+margin-top: 30px;
+margin-bottom: 100px;
+display: flex;
+justify-content: space-between;
+}
+.Blog img{
+    width: 85%;
+}
+.bottom{
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 200px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+}
+.bottom>img{
+    margin: 5px;
+}
+
+.top>h1{
+    font-size: 60px;
+    color: rgb(28, 188, 28);
+}
+.top>h2{
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
+.signup{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+.signup button{
+background-color: rgb(55, 55, 255);
+width: 100px;
+padding: 10px;
+color: white;
+border-radius: 5px;
+border: none;
+}
